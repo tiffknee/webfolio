@@ -1,0 +1,116 @@
+/* roboto-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url('roboto-v30-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* lora-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 400;
+  src: url('lora-v32-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+body{
+  background-color: #fff;
+  padding: 25px 0 0;
+}
+
+.grid{
+  width: 90%;
+  max-width: 900px;
+  background-color: #fff;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header{
+  background-color: #fff;
+  color: #222;
+  margin-bottom: 50px;
+}
+.footer{
+  background-color: #fff;
+  color: #222;
+  text-align: center;
+}
+
+.caption{
+  font-family: Roboto;
+  font-size: 13px;
+}
+
+h1{
+  font-family: Roboto;
+  font-size: 48pt;
+  font-weight: 700;
+  line-height: 75px;
+  }
+h3{
+  font-family: Roboto;
+  font-size: 24pt;
+  font-weight: 700;
+  line-height: 26.4px;
+} 
+p{
+  font-family: Lora;
+  font-size: 14pt;
+  line-height: 15.4px;
+  color: #555753;
+}
+
+a{
+  font-weight: bold; 
+  text-decoration: none; 
+  color: #B7A5DF;
+}
+a:hover, a:focus, a:active{
+  text-decoration: none; 
+  color: #9685BA;
+  background: #D4CDDC;
+}
+
+.block{
+  background-color: #EEFF41;
+  display: block;
+  margin-bottom: 20px;
+  padding: 100px 0;
+  font-family: Lora;
+  font-size: 17px;
+  line-height: 23px;
+  text-align: center;
+}
+.gutter{
+  margin-left: (40px / 2);
+  margin-right: (40px / 2);
+}
+
+.col-33{
+  width: 33.3%;
+  float: left;
+}
+.col-50{
+  width: 50%;
+  float: left;
+}
+
+.clear{
+  clear: both;
+  display: block;
+}
+
+@media all and (max-width:800px) {
+  .col-33{
+    width: 50%;
+  }
+}
+@media all and (max-width:600px) {
+  .col-50, .col-33{
+    width: 100%;
+    float: none;
+  }
+}
