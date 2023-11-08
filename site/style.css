@@ -66,15 +66,14 @@ p{
 a{
   font-weight: bold;
   text-decoration: none;
-  color: #B7A5DF;
+  color: #00B7CC;
 }
 a:hover,a:focus,a:active{
-  color: #9685BA;
-  background: #D4CDDC;
+  background: #EEFF41;
 }
 
 .arrow{
-  background: #B7A5DF;
+  background: #00B7CC;
   height:0.125rem;
   width:3.125rem;
   position: relative;
@@ -84,7 +83,7 @@ a:hover,a:focus,a:active{
 }
 .arrow:before,.arrow:after{
   content: "";
-  background: #B7A5DF;
+  background: #00B7CC;
   height:0.125rem;
   width:0.8125rem;
   position: absolute;
@@ -118,16 +117,33 @@ a:hover,a:focus,a:active{
   box-shadow: none;
 }
 
+figure{
+  margin:0;
+}
+figcaption{
+  font-family: Lora;
+  font-size: 17px;
+  line-height: 23px;
+  text-align: center;
+  vertical-align:middle;
+  display: inline-block;
+  width:100%;
+  margin-top:85px;
+}
+
+.fill {
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+}
+
 .block{
   background-color: #EEFF41;
   display: block;
   height: 200px;
   margin-bottom: 15px;
   margin-right: 15px;
-  font-family: Lora;
-  font-size: 17px;
-  line-height: 23px;
-  text-align: center;
 }
 .gutter{
   margin-left: (40px / 2);
