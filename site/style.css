@@ -89,6 +89,16 @@ a:hover,a:focus,a:active{
   background: #EEFF41;
 }
 
+.transition{
+  text-decoration: none;
+  outline: none;
+  transition-delay: 0s;
+  transition-duration: 0.4s;
+  transition-property: all;
+  transition-timing-function: ease;
+  box-shadow: none;
+}
+
 .arrow{
   background: #00B7CC;
   height:0.125rem;
@@ -152,14 +162,15 @@ a:hover,a:focus,a:active{
   margin-left:5px;
 }
 
-.transition{
-  text-decoration: none;
-  outline: none;
+.project{
   transition-delay: 0s;
-  transition-duration: 0.4s;
+  transition-duration: 0.8s;
   transition-property: all;
   transition-timing-function: ease;
-  box-shadow: none;
+  transform: translateY(0);
+}
+.project:hover{
+  transform: translateY(-0.75rem);
 }
 
 figure{
