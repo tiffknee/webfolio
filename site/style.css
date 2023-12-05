@@ -21,14 +21,15 @@ html{
 
 body{
   background-color: #fff;
-  padding: 25px 0 0;
+  margin: 0;
+  padding: 0;
 }
 
 .grid{
   width: 90%;
   max-width: 900px;
   background-color: #fff;
-  margin: 0 auto;
+  margin: 25px auto;
   padding: 20px;
 }
 
@@ -39,6 +40,7 @@ body{
 }
 .footer{
   background-color: #fff;
+  border-top: 1px solid #000;
   color: #222;
   text-align: center;
 }
@@ -229,12 +231,12 @@ figcaption{
   display: block;
 }
 
-@media all and (max-width:800px) {
+@media all and (max-width:900px) {
   .col-33{
     width: 50%;
   }
 }
-@media all and (max-width:600px) {
+@media all and (max-width:640px), screen and (max-device-width:640px) {
   .col-50, .col-33{
     width: 100%;
     float: none;
