@@ -18,7 +18,6 @@
 html{
   scroll-behavior: smooth;
 }
-
 body{
   background-color: #fff;
   margin: 0;
@@ -39,10 +38,68 @@ body{
   margin-bottom: 50px;
 }
 .footer{
-  background-color: #fff;
+  background-color: #222;
   border-top: 1px solid #000;
-  color: #222;
+  color: #ccc;
   text-align: center;
+}
+
+.menu{
+  display: block;
+  position: fixed;
+  z-index: 100;
+  overflow: hidden;
+  margin: 2rem;
+  padding: 0.6rem;
+  border-radius: 3.1rem;
+  background: linear-gradient(to bottom right, #00B7CC, #EEFF41);
+  box-shadow: 5px 5px 1px #cecaca;
+  bottom: 0px;
+  right: 0px;
+}
+.menu-links{
+  list-style: none;
+  margin-top: -0.1em;
+  margin-left: 0.4em;
+  padding: 5px;
+  align-items: center;
+  text-align: center;
+  font-family: Roboto, sans-serif;
+  font-size: 0.9em;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #111;
+}
+.menu-links li{
+  float: left;
+  margin: 0 0.5em;
+}
+.menu-links li a{
+  background: none;
+}
+.menu-links li a::after{
+  content: " ";
+  height: 0.0625rem;
+  width: 0%;
+  position: absolute;
+  bottom: -0.125rem;
+  right: 0;
+  background: #2a2a2a;
+  transition: 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.menu-links li a:hover::after{
+  width: 100%;
+  right: unset;
+  left: 0;
+}
+
+.social-links{
+  list-style: none;
+  margin: 5px 0;
+  padding: 0;
+}
+.social-links li{
+  margin-left:5px;
 }
 
 .caption{
@@ -89,6 +146,7 @@ a{
 a:hover,a:focus,a:active{
   color: #000000;
   background: #EEFF41;
+  transition: 0.9s cubic-bezier(0.1,0.9,0.2,1);
 }
 
 .transition{
@@ -153,15 +211,6 @@ a:hover,a:focus,a:active{
 }
 .cv-button:hover{
   background-color: #00B7CC;
-}
-
-.social-links{
-  list-style: none;
-  margin: 5px 0;
-  padding: 0;
-}
-.social-links li{
-  margin-left:5px;
 }
 
 .project{
